@@ -1,0 +1,828 @@
+@font-face {
+	font-family: 'Old Standard TT';
+	src: url(font/Old Standard TT.ttf);
+}
+@font-face {
+	font-family: OpenSans;
+	src: url(font/OpenSans.ttf);
+}
+@font-face {
+	font-family: MyriadPro;
+	src: url(font/MyriadPro.otf);
+}
+@font-face {
+	font-family: festus;
+	src: url(font/festus.ttf);
+}
+/*Для IE*/
+@font-face {
+	font-family: 'Old Standard TT';
+	src: url(font/Old Standard TT.eot);
+}
+@font-face {
+	font-family: OpenSans;
+	src: url(font/OpenSans.eot);
+}
+@font-face {
+	font-family: MyriadPro;
+	src: url(font/MyriadPro.eot);
+}
+@font-face {
+	font-family: festus;
+	src: url(font/festus.eot);
+}
+@width: 1230px;
+@auto: auto;
+@center: center;
+@mlr: -176.5px;
+.bg(@image; @repeat: no-repeat; @position: 0 0) {
+	background-image: @image;
+	background-repeat: @repeat;
+	background-position: @position;
+}
+@i: 'image';
+@colorW: white;
+.text(@text; @size) {
+	font-family: @text;
+	font-size: @size;
+}
+@bold: bold;
+@bolder: bolder;
+@none: none;
+@colorB: black;
+.border(@weight; @solid; @color) {
+	border-width: @weight;
+	border-style: @solid;
+	border-color: @color;
+}
+@in-b: inline-block;
+@text-top: text-top;
+@colorBr: #a89c72;
+@fL: left;
+@fR: right;
+@colorG: #999999;
+@mTitle: 23px;
+@colorOr: #D7845A;
+@mp: 10px;
+.shadow(@textSh: none; @boxSh: none; @radius: 0px) {
+	text-shadow: @textSh;
+	box-shadow: @boxSh;
+	border-radius: @radius;
+}
+@transparent: transparent;
+
+/*Внутренняя ширина*/
+.wrap {
+	width: @width;
+	margin-left: @auto;
+	margin-right: @auto;
+	text-align: @center;
+}
+
+/*Стили для header*/
+
+header {
+	height: 1456px;
+	margin-left: @mlr;
+	margin-right: @mlr;
+	.bg(url("@{i}/bg_header.png"));
+	text-align: @center;
+}
+/*Логотип*/
+
+.logo {
+	width: @mp * 31;
+	height: 333px;
+	margin-left: @auto;
+	margin-right: @auto;
+	.bg(url("@{i}/logo.png"), no-repeat, 0 68px);
+	margin-bottom: @mp * 21;
+
+}
+/*Заголовок*/
+
+.header p.header_title {
+	color: @colorW;
+	.text('Old Standard TT', 76px);
+	margin-bottom: @mp * 3px;
+}
+
+
+header .header p:nth-child(3) {
+	color: @colorW;
+	.text(festus, 30px);
+	width: 487px;
+	margin: @mp*3px @auto 145px @auto;
+}
+
+/*Кнопка*/
+
+header .header a {
+	width: @mp * 26px;
+	.text(OpenSans, 14px);
+	font-weight: @bolder;
+	margin-bottom: @mp * 30px;
+	padding: @mp + 5px;
+	background-image: @none;
+	background-color: @colorW;
+	color: @colorB;
+	.shadow();
+
+
+	&:focus {
+		outline: @none;
+		text-decoration: @none;
+		border: @none;
+	}
+	&:hover {
+		outline: @none;
+		text-decoration: @none;
+		background-image: @none;
+		background-color: @colorB;
+		.border(1px, solid, @colorW);
+		color: @colorW;
+		.shadow();
+	}
+}	
+/*Стили для иконок меню*/
+
+header .icon_menu a.icon {
+	display: @in-b;
+	margin-right: @mp + 86px;
+	.text(OpenSans, 14px);
+	color: @colorW;
+	text-decoration: @none;
+	vertical-align: top;
+	padding-top: @mp * 6px;
+}
+header .icon_menu a.special {
+	width: @mp * 16px;
+	height: @mp + 77px;
+	.bg(url("@{i}/icon_menu.png"));
+}
+header .icon_menu a.menu {
+	width: @mp + 51px;
+	height: @mp + 77px;
+	.bg(url("@{i}/icon_menu.png"), no-repeat, -160px 0);
+}
+header .icon_menu a.reviews {
+	width: @mp + 57px;
+	height: @mp + 77px;
+	.bg(url("@{i}/icon_menu.png"), no-repeat, -221px 0);
+}
+header .icon_menu a.contacts {
+	width: @mp + 73px;
+	height: @mp + 77px;
+	.bg(url("@{i}/icon_menu.png"), no-repeat, -288px 0);
+}
+header .icon_menu a.location {
+	width: 109px;
+	height: @mp + 77px;
+	.bg(url("@{i}/icon_menu.png"), no-repeat, -371px 0);
+}
+header .icon_menu a.icon:hover {
+	opacity: 0.5;
+}
+
+/*Стили для RESTAURANT SECTION*/
+
+.restaurant {
+	height: 876px;
+	margin-left: @mlr;
+	margin-right: @mlr;
+	.bg(url("@{i}/bg_rest.png"));
+
+
+			/*Стили для заголовка*/
+
+	.restaurant_title {
+		margin-bottom: @mp * 8px;
+		padding-top: @mp * 15px;
+
+			.restaurant_title img {
+				vertical-align: @text-top;
+			}
+			
+			.title {
+				display: @in-b;
+				margin-left: @mTitle;
+				margin-right: @mTitle;
+				.text('Old Standard TT', 60px);
+			}
+			 p:nth-child(4) {
+			 	.text(festus, 24px);
+				color: @colorBr;
+			}
+	}
+
+/*Стили для описания*/
+
+	.restaurant_desc {
+		padding-left: 187px;
+		padding-right: 175px;
+		.text(OpenSans, 16px);
+		line-height: @mp * 3px;
+		margin-bottom: @mp + 64px;
+	}
+	.restaurant_chef_icon {
+		width: 175px;
+		height: @mp * 5px;
+		.bg(url("@{i}/chef.png"));
+		margin-left: @auto;
+		margin-right: @auto;
+		margin-bottom: @mp + 8px;
+	}
+	.restaurant_chef p {
+		.text(OpenSans, 14px);
+		font-weight: @bold;
+	}
+}
+
+/*Стили для SPECIAL SECTION*/
+
+.special_section {
+	height: 738px;
+	margin-left: @mlr;
+	margin-right: @mlr;
+	.bg(url("@{i}/bg_special.png"));
+	padding-top: 112px;
+
+	.special_wrap {
+		height: 515px;
+		background-color: @colorW;
+	
+
+		/*Стили для левого изображения*/
+
+		.special_image {
+			width: 432px;
+			height: 515px;
+			float: @fL;
+			display: @in-b;
+			.bg(url("@{i}/special_one.png"));
+		}
+
+/*Стили для правого описания*/
+
+		.special_desc {
+			display: @in-b;
+			width: 798px;
+			margin-top: @mp * 5px;
+		
+
+			/*Заголовок*/
+
+			.special_title img {
+				vertical-align: @text-top;
+			}
+
+			.special_title .title {
+				display: @in-b;
+				margin-left: @mTitle;
+				margin-right: @mTitle;
+				.text('Old Standard TT', 40px);
+			}
+			.special_title p:nth-child(4) {
+				.text(festus, 24px);
+				color: @colorBr;
+			}
+/*Наименования спецпредложений*/
+
+			.special_items {
+				width: 534px;
+				margin-left: @auto;
+				margin-right: @auto;
+				margin-top: (@mp * 5px) + 7px;
+			
+				.special_items_left {
+					display: @in-b;
+					float: @fL;
+				}
+				.special_items_right {
+					display: @in-b;
+					float: @fR;
+				}
+				.items a {
+					.text('Old Standard TT', 24px);
+					margin-bottom: @mp;
+					text-decoration: @none;
+					color: @colorB;
+					&:hover {
+						text-decoration: underline;
+					}
+				}	
+				.items p {
+					.text(OpenSans, 18px);
+					font-weight: @bold;
+					color: @colorG;
+				}
+				.items img {
+					margin-top: @mp;
+					margin-bottom: @mp + 5px;
+				}
+			}
+		}
+	}
+}
+/*Стили для MENU SECTION*/
+
+.menu_section {
+	margin-left: @mlr;
+	margin-right: @mlr;
+	.bg(url("@{i}/bg_menu.png"));
+
+	.menu_section_top {
+		height: @mp * 39px;
+		margin-bottom: @mp * 3px;
+	
+
+/*Заголовок*/
+
+		.menu_title {
+			margin-bottom: @mp * 7px;
+			padding-top: @mp * 5px;
+		
+			.title {
+				display: @in-b;
+				margin-left: @mTitle;
+				margin-right: @mTitle;
+				.text('Old Standard TT', 60px);
+			}
+			img {
+				vertical-align: @text-top;
+			}
+			p:nth-child(4) {
+				.text(festus, 24px);
+				color: @colorBr;
+			}
+		}
+/*Круглые ссылки на меню*/
+
+		.menu_desc {
+			display: @in-b;
+			.text('Old Standard TT', 35px);
+			text-decoration: @none;
+			color: @colorB;
+		}
+		a.menu_desc:focus {
+			color: @colorB;
+			text-decoration: @none;
+			outline: @none;
+		}
+		a.menu_desc:hover {
+			color: @colorOr;
+			text-decoration: @none;
+		}
+		.menu_desc img {
+			margin-bottom: @mp;
+		}
+		.menu_salats {
+			margin-left: @mp * 30px;
+			margin-right: @mp * 30px;
+		}
+	}
+
+/*Описание меню*/
+
+	.menu_content {
+		.bg(url("@{i}/bg_menu_desc.png"));
+		margin-left: @mlr;
+		margin-right: @mlr;
+	
+		.menu_content_desc {
+			display: @none;
+			padding-left: @mp * 10px;
+			padding-top: @mp + 5px;
+			height: @mp * 29px;
+			margin-top: -5px;
+			width: @width;
+			margin-left: @auto;
+			margin-right: @auto;
+		
+			.menu_name {
+				.text(OpenSans, 14px);
+				font-weight: @bold;
+			}
+			.menu_name_desc {
+				.text(OpenSans, 12px);
+			
+				.col-md-1 {
+					color: @colorOr;
+					font-weight: @bold;
+					text-align: @fR;
+				}
+			}
+		}
+	}
+}
+/*Стили для REVIEWS SECTION */
+
+.reviews_section {
+	height: @mp * 66px;
+	margin-left: @mlr;
+	margin-right: @mlr;
+	.bg(url("@{i}/bg_reviews.png"));
+	padding-top: @mp * 13px;
+	margin-top: -30px;
+
+	.reviews_wrap {
+		height: @mp * 40px;
+		background-color: @colorW;
+		padding-top: @mp * 5px;
+	
+
+/*Заголвоок*/
+
+		.reviews_title {
+			margin-bottom: @mp * 3px;
+	
+			p {
+				display: @in-b;
+				margin-left: @mTitle;
+				margin-right: @mTitle;
+				.text('Old Standard TT', 60px)
+			}
+			img {
+				vertical-align: @text-top;
+			}
+		}
+
+/*Стили для слайдера*/
+
+		.carousel-indicators {
+			margin-bottom: @mp * 10px;
+			bottom: @mp * 10px !important;
+		
+			li.noactive {
+				background-color: #dddddd;
+				border: 1px solid #dddddd;
+			}
+			li.active {
+				background-color: #d27244;
+				border: 1px solid #d27244;
+			}
+		}
+		.carousel_content {
+			width: @mp * 95px;
+			margin-right: @auto;
+			margin-left: @auto;
+			padding-top: @mp * 7px;
+			.text(OpenSans, 16px);
+			color: @colorB;
+			margin-top: -30px;
+		}
+		div.carousel-inner div.item  div.carousel-caption {
+			position: relative !important;
+			top: @mp !important;
+			left: 0px !important;
+		
+			.carousel_author {
+				.text(OpenSans, 14px);
+				color: @colorB;
+				font-weight: @bold;
+				text-shadow: @none;
+			}
+		}
+		.carousel_content img.quotes_left {
+			margin-right: @mp * 2px;
+			margin-top: @mp * (-2px);
+		}
+		.carousel_content img.quotes_right {
+			margin-left: @mp * 2px;
+			margin-top: @mp * 1px;
+		}
+		a.carousel-control {
+			background: @colorW;
+			background-image: @none;
+			background-repeat: no-repeat;
+			width: 35px;
+			height: 65px;
+		}
+		a.carousel-control.left {
+			margin-left: @mp * 2px;
+		}
+		a.carousel-control.right {
+			margin-right: @mp * 2px;
+		}
+	}
+}
+/*Стили для CONTACT SECTION */
+ 
+.contact { 
+ 	padding-top: 96px;
+	margin-bottom: 108px;
+	text-align: @fL;
+
+
+ /*Счастливые часы*/
+ 
+	.happy_hour {
+	 	display: @in-b;
+	 	width: @mp * 35px;
+	 	height: 218px;
+	 	.border(2px, solid, #d27244);
+	 	padding-top: @mp * 3px;
+	 	padding-left: 45px;
+	 	margin-right: @mp * 10px;
+	 	float: @fL;
+	
+		.happy_hour_title {
+		 	display: @in-b;
+		 	.text(OpenSans, 18px);
+		 	font-weight: @bold;
+		 	color: #d27244;
+		 	border-bottom: 1px solid #d27244;
+		 	padding-bottom: @mp + 8px;
+		}
+		.happy_hour_desc {
+			.text(OpenSans, 14px);
+		 	margin-top: @mp;
+		 	line-height: @mp + 14px;
+		}
+	}	
+
+ /*Телефон*/
+
+	.contact_tel {
+	 	display: @in-b;
+	 	width: @mp * 33px;
+	 	height: 218px;
+	 	.bg(url("@{i}/tel.png"), no-repeat, 50% 50%);
+	 	margin-right: @mp * 4px;
+	 	padding-top: 81px;
+	 	padding-left: @mp + 3px;
+	
+		p {
+			.text(festus, 48px);
+		}
+	}
+ /*Подписаться*/
+
+	.contact_singup {
+	 	display: @in-b;
+	 	width: @mp * 41px;
+	 	height: 218px;
+	 	float: @fR;
+	 	padding-top: @mp * 3px;
+	 	padding-left: @mp * 6px;
+	
+		.contact_singup_title {
+			.text(OpenSans, 20px);
+		 	font-weight: @bold;
+		}
+		p:nth-child(2) {
+			.text(festus, 18px);
+		 	color: @colorG;
+		 	margin-bottom: 43px;
+		}
+
+/*Форма email*/
+ 
+		input.sing_email {
+		 	height: 47px;
+		 	padding-left: @mp;
+
+			&:focus {
+			  	outline: @none;
+			  	.border(1px, solid, @colorB);
+			}
+		}
+/*Кнопка*/
+
+		input.btn_sing {
+		 	background-image: @none;
+		 	background-color: #d27244;
+		 	color: @colorW;
+		 	.text(OpenSans, 14px);
+		 	border-radius: 0px;
+		 	margin-left: @mp + 8px;
+		 	height: 47px;
+		 	.shadow();
+		 	.border(1px, solid, #d27244);
+
+		
+			&:focus {
+			  	background-image: @none;
+			 	background-color: #d27244;
+			 	color: @colorW;
+			  	border-color: @colorW;
+			  	text-shadow: @none;
+			  	outline: @none;
+			}
+			&:hover {
+			  	background-image: @none;
+			  	background-color: @colorB;
+			  	color: @colorW;
+			  	border-color: @colorW;
+			  	text-shadow: @none;
+			  	outline: @none;
+			}
+		}
+		#sing_result {
+			margin-top: 20px;
+			.text(OpenSans, 14px);
+		}
+	}
+}
+/*Стили для LOCATION SECTION */
+
+.location_section {
+ 	height: @mp * 70px;
+ 	margin-left: @mlr;
+ 	margin-right: @mlr;
+ 	.bg(url("@{i}/map.png"));
+ 	padding-top: @mp * 7px;
+
+
+ /*Заголовок*/
+
+	.location_title {
+		margin-bottom: 112px;
+		text-align: @center;
+	
+		p.title {
+		 	display: @in-b;
+		 	margin-left: @mTitle;
+			margin-right: @mTitle;
+			.text('Old Standard TT', 60px);
+			color: @colorW;
+		}
+		img {
+			vertical-align: @text-top;
+		}
+		p:nth-child(4) {
+			.text(festus, 24px);
+			color: @colorW;
+		}
+	}
+
+/*Контактная форма*/
+
+	.location_form {
+		float: @fL;
+		width: @mp * 63px;
+		padding-left: @mp + 11px;
+	
+		p {
+			color: @colorW;
+			.text(OpenSans, 18px);
+			font-weight: @bold;
+			text-align: @fL;
+		}
+		.form_left, .form_right {
+			float: @fL;
+		}
+		.info_text  {
+		 	height: @mp + 37px;
+		 	padding-left: @mp;
+		 	margin-bottom: @mp + 1px;
+		 	.border(1px, solid, #d27244);
+		 	margin-right: @mp * 2px;
+		}
+		textarea {
+		 	width: 307px;
+		 	height: 163px;
+		 	.border(1px, solid, #d27244);
+		 	margin-bottom: @mp + 8px;
+		}
+		.info_text:focus, textarea:focus {
+		 	outline: @none;
+		 	border-color: @colorB;
+		}
+		.form_submit {
+		 	float: @fR;
+		 	background-image: @none;
+		 	background-color: @transparent;
+		 	color: @colorW;
+		 	.text(OpenSans, 14px);
+		 	.shadow();
+		 	.border(1px, solid, @colorW);
+		 	font-weight: @bold;
+		}
+		.form_right input.form_submit:focus {
+		   	background-image: @none;
+		  	background-color: @transparent;
+		  	border-color: @colorW;
+		  	color: @colorW;
+		  	text-shadow: @none;
+		  	outline: @none;
+		}
+		.form_right input.form_submit:hover {
+		  	background-image: @none;
+		  	background-color: @transparent;
+		  	border-color: @colorB;
+		  	color: @colorB;
+		  	text-shadow: @none;
+		}
+		#location_result {
+			float: @fR;
+			color: @colorW;
+			margin-top: 20px;
+			margin-right: 100px;
+			.text(OpenSans, 14px);
+		}
+	}
+  /*Правый блок с информацией*/
+  
+	.location_info_wrap {
+	 	float: @fR;
+	 	width: 549px;
+	 	text-align: @fL;
+	
+		.location_info {
+		 	width: 473px;
+		 	color: @colorW;
+		 	.text(OpenSans, 14px);
+			margin-bottom: @mp * 5px;
+			line-height: @mp + 14px;
+		
+			.location_info_title {
+				font-size: @mp + 8px;
+				font-weight: @bold;
+				margin-bottom: @mp + 15px;
+			}
+		}
+		.glyphicon {
+			padding-right: @mp;
+		}
+		
+
+/*Блок с адресом*/
+
+		.location_adress {
+		 	width: 473px;
+		 	color: @colorW;
+		 	.text(OpenSans, 14px);
+		
+			.location_adress_title {
+				font-size: @mp + 8px;
+				font-weight: @bold;
+				margin-bottom: @mp + 15px;
+			}
+			a {
+			 	display: @in-b;
+			 	width: @mp * 10px;
+			 	height: @mp * 10px;
+			 	.border(1px, solid, @colorW);
+			 	.bg(url("@{i}/location.png"), no-repeat, 50% 35%);
+			 	float: @fR;
+			 	color: @colorW;
+			 	.text(OpenSans, 14px);
+				font-weight: @bold;
+				padding-top: @mp + 65px;
+				padding-left: @mp + 5px;
+				position: relative;
+				top: -100px;
+			
+				&:focus {
+				 	text-decoration: @none;
+				 	outline: @none;
+				 	color: @colorW;
+				}
+				&:hover {
+				  	text-decoration: @none;
+				  	color: @colorB;
+				  	border-color: @colorB;
+				  	.bg(url("@{i}/location-black.png"), no-repeat, 50% 35%);
+				}
+			}
+		}
+	}
+}
+/*Стили для FOOTER */
+
+footer {
+	text-align: @center;
+	padding-top: @mp + 53px;
+
+	nav li {
+	 	display: @in-b;
+	
+		a {
+			display: @in-b;
+			margin-right: @mp + 25px;
+			color: @colorB;
+			.text(MyriadPro, 14px);
+		
+			&:focus {
+				outline: @none;
+				text-decoration: @none;
+				color: @colorB;
+			}
+			&:hover {
+				outline: @none;
+				text-decoration: @none;
+				color: #D3784C;
+			}
+		}
+	}
+	nav {
+		margin-bottom: @mp + 15px;
+	}
+	p {
+		.text(OpenSans, 10px);
+		color: #444444;
+		margin-top: @mp + 5px;
+	}
+}
+

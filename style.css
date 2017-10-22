@@ -1,0 +1,796 @@
+@font-face {
+  font-family: 'Old Standard TT';
+  src: url(font/Old Standard TT.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(font/OpenSans.ttf);
+}
+@font-face {
+  font-family: MyriadPro;
+  src: url(font/MyriadPro.otf);
+}
+@font-face {
+  font-family: festus;
+  src: url(font/festus.ttf);
+}
+/*Для IE*/
+@font-face {
+  font-family: 'Old Standard TT';
+  src: url(font/Old Standard TT.eot);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(font/OpenSans.eot);
+}
+@font-face {
+  font-family: MyriadPro;
+  src: url(font/MyriadPro.eot);
+}
+@font-face {
+  font-family: festus;
+  src: url(font/festus.eot);
+}
+/*Внутренняя ширина*/
+.wrap {
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/*Стили для header*/
+header {
+  height: 1456px;
+  margin-left: -176.5px;
+  margin-right: -176.5px;
+  background-image: url("image/bg_header.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  text-align: center;
+}
+/*Логотип*/
+.logo {
+  width: 310px;
+  height: 333px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("image/logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 68px;
+  margin-bottom: 210px;
+}
+/*Заголовок*/
+.header p.header_title {
+  color: white;
+  font-family: 'Old Standard TT';
+  font-size: 76px;
+  margin-bottom: 30px;
+}
+header .header p:nth-child(3) {
+  color: white;
+  font-family: festus;
+  font-size: 30px;
+  width: 487px;
+  margin: 30px auto 145px auto;
+}
+/*Кнопка*/
+header .header a {
+  width: 260px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-bottom: 300px;
+  padding: 15px;
+  background-image: none;
+  background-color: white;
+  color: black;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+header .header a:focus {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+header .header a:hover {
+  outline: none;
+  text-decoration: none;
+  background-image: none;
+  background-color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+/*Стили для иконок меню*/
+header .icon_menu a.icon {
+  display: inline-block;
+  margin-right: 96px;
+  font-family: OpenSans;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  vertical-align: top;
+  padding-top: 60px;
+}
+header .icon_menu a.special {
+  width: 160px;
+  height: 87px;
+  background-image: url("image/icon_menu.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+header .icon_menu a.menu {
+  width: 61px;
+  height: 87px;
+  background-image: url("image/icon_menu.png");
+  background-repeat: no-repeat;
+  background-position: -160px 0;
+}
+header .icon_menu a.reviews {
+  width: 67px;
+  height: 87px;
+  background-image: url("image/icon_menu.png");
+  background-repeat: no-repeat;
+  background-position: -221px 0;
+}
+header .icon_menu a.contacts {
+  width: 83px;
+  height: 87px;
+  background-image: url("image/icon_menu.png");
+  background-repeat: no-repeat;
+  background-position: -288px 0;
+}
+header .icon_menu a.location {
+  width: 109px;
+  height: 87px;
+  background-image: url("image/icon_menu.png");
+  background-repeat: no-repeat;
+  background-position: -371px 0;
+}
+header .icon_menu a.icon:hover {
+  opacity: 0.5;
+}
+/*Стили для RESTAURANT SECTION*/
+.restaurant {
+  height: 876px;
+  margin-left: -176.5px;
+  margin-right: -176.5px;
+  background-image: url("image/bg_rest.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*Стили для заголовка*/
+  /*Стили для описания*/
+}
+.restaurant .restaurant_title {
+  margin-bottom: 80px;
+  padding-top: 150px;
+}
+.restaurant .restaurant_title .restaurant_title img {
+  vertical-align: text-top;
+}
+.restaurant .restaurant_title .title {
+  display: inline-block;
+  margin-left: 23px;
+  margin-right: 23px;
+  font-family: 'Old Standard TT';
+  font-size: 60px;
+}
+.restaurant .restaurant_title p:nth-child(4) {
+  font-family: festus;
+  font-size: 24px;
+  color: #a89c72;
+}
+.restaurant .restaurant_desc {
+  padding-left: 187px;
+  padding-right: 175px;
+  font-family: OpenSans;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 74px;
+}
+.restaurant .restaurant_chef_icon {
+  width: 175px;
+  height: 50px;
+  background-image: url("image/chef.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+.restaurant .restaurant_chef p {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: bold;
+}
+/*Стили для SPECIAL SECTION*/
+.special_section {
+  height: 738px;
+  margin-left: -176.5px;
+  margin-right: -176.5px;
+  background-image: url("image/bg_special.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 112px;
+}
+.special_section .special_wrap {
+  height: 515px;
+  background-color: white;
+  /*Стили для левого изображения*/
+  /*Стили для правого описания*/
+}
+.special_section .special_wrap .special_image {
+  width: 432px;
+  height: 515px;
+  float: left;
+  display: inline-block;
+  background-image: url("image/special_one.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.special_section .special_wrap .special_desc {
+  display: inline-block;
+  width: 798px;
+  margin-top: 50px;
+  /*Заголовок*/
+  /*Наименования спецпредложений*/
+}
+.special_section .special_wrap .special_desc .special_title img {
+  vertical-align: text-top;
+}
+.special_section .special_wrap .special_desc .special_title .title {
+  display: inline-block;
+  margin-left: 23px;
+  margin-right: 23px;
+  font-family: 'Old Standard TT';
+  font-size: 40px;
+}
+.special_section .special_wrap .special_desc .special_title p:nth-child(4) {
+  font-family: festus;
+  font-size: 24px;
+  color: #a89c72;
+}
+.special_section .special_wrap .special_desc .special_items {
+  width: 534px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 57px;
+}
+.special_section .special_wrap .special_desc .special_items .special_items_left {
+  display: inline-block;
+  float: left;
+}
+.special_section .special_wrap .special_desc .special_items .special_items_right {
+  display: inline-block;
+  float: right;
+}
+.special_section .special_wrap .special_desc .special_items .items a {
+  font-family: 'Old Standard TT';
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+.special_section .special_wrap .special_desc .special_items .items a:hover {
+  text-decoration: underline;
+}
+.special_section .special_wrap .special_desc .special_items .items p {
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: bold;
+  color: #999999;
+}
+.special_section .special_wrap .special_desc .special_items .items img {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+/*Стили для MENU SECTION*/
+.menu_section {
+  margin-left: -176.5px;
+  margin-right: -176.5px;
+  background-image: url("image/bg_menu.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  /*Описание меню*/
+}
+.menu_section .menu_section_top {
+  height: 390px;
+  margin-bottom: 30px;
+  /*Заголовок*/
+  /*Круглые ссылки на меню*/
+}
+.menu_section .menu_section_top .menu_title {
+  margin-bottom: 70px;
+  padding-top: 50px;
+}
+.menu_section .menu_section_top .menu_title .title {
+  display: inline-block;
+  margin-left: 23px;
+  margin-right: 23px;
+  font-family: 'Old Standard TT';
+  font-size: 60px;
+}
+.menu_section .menu_section_top .menu_title img {
+  vertical-align: text-top;
+}
+.menu_section .menu_section_top .menu_title p:nth-child(4) {
+  font-family: festus;
+  font-size: 24px;
+  color: #a89c72;
+}
+.menu_section .menu_section_top .menu_desc {
+  display: inline-block;
+  font-family: 'Old Standard TT';
+  font-size: 35px;
+  text-decoration: none;
+  color: black;
+}
+.menu_section .menu_section_top a.menu_desc:focus {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
+.menu_section .menu_section_top a.menu_desc:hover {
+  color: #D7845A;
+  text-decoration: none;
+}
+.menu_section .menu_section_top .menu_desc img {
+  margin-bottom: 10px;
+}
+.menu_section .menu_section_top .menu_salats {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.menu_section .menu_content {
+  background-image: url("image/bg_menu_desc.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-left: -176.5px;
+  margin-right: -176.5px;
+}
+.menu_section .menu_content .menu_content_desc {
+  display: none;
+  padding-left: 100px;
+  padding-top: 15px;
+  height: 290px;
+  margin-top: -5px;
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu_section .menu_content .menu_content_desc .menu_name {
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: bold;
+}
+.menu_section .menu_content .menu_content_desc .menu_name_desc {
+  font-family: OpenSans;
+  font-size: 12px;
+}
+.menu_section .menu_content .menu_content_desc .menu_name_desc .col-md-1 {
+  color: #D7845A;
+  font-weight: bold;
+  text-align: right;
+}
+/*Стили для REVIEWS SECTION */
+.reviews_section {
+  height: 660px;
+  margin-left: -176.5px;
+  margin-right: -176.5px;
+  background-image: url("image/bg_reviews.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 130px;
+  margin-top: -30px;
+}
+.reviews_section .reviews_wrap {
+  height: 400px;
+  background-color: white;
+  padding-top: 50px;
+  /*Заголвоок*/
+  /*Стили для слайдера*/
+}
+.reviews_section .reviews_wrap .reviews_title {
+  margin-bottom: 30px;
+}
+.reviews_section .reviews_wrap .reviews_title p {
+  display: inline-block;
+  margin-left: 23px;
+  margin-right: 23px;
+  font-family: 'Old Standard TT';
+  font-size: 60px;
+}
+.reviews_section .reviews_wrap .reviews_title img {
+  vertical-align: text-top;
+}
+.reviews_section .reviews_wrap .carousel-indicators {
+  margin-bottom: 100px;
+  bottom: 100px !important;
+}
+.reviews_section .reviews_wrap .carousel-indicators li.noactive {
+  background-color: #dddddd;
+  border: 1px solid #dddddd;
+}
+.reviews_section .reviews_wrap .carousel-indicators li.active {
+  background-color: #d27244;
+  border: 1px solid #d27244;
+}
+.reviews_section .reviews_wrap .carousel_content {
+  width: 950px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 70px;
+  font-family: OpenSans;
+  font-size: 16px;
+  color: black;
+  margin-top: -30px;
+}
+.reviews_section .reviews_wrap div.carousel-inner div.item div.carousel-caption {
+  position: relative !important;
+  top: 10px !important;
+  left: 0px !important;
+}
+.reviews_section .reviews_wrap div.carousel-inner div.item div.carousel-caption .carousel_author {
+  font-family: OpenSans;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-shadow: none;
+}
+.reviews_section .reviews_wrap .carousel_content img.quotes_left {
+  margin-right: 20px;
+  margin-top: -20px;
+}
+.reviews_section .reviews_wrap .carousel_content img.quotes_right {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.reviews_section .reviews_wrap a.carousel-control {
+  background: white;
+  background-image: none;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 65px;
+}
+.reviews_section .reviews_wrap a.carousel-control.left {
+  margin-left: 20px;
+}
+.reviews_section .reviews_wrap a.carousel-control.right {
+  margin-right: 20px;
+}
+/*Стили для CONTACT SECTION */
+.contact {
+  padding-top: 96px;
+  margin-bottom: 108px;
+  text-align: left;
+  /*Счастливые часы*/
+  /*Телефон*/
+  /*Подписаться*/
+}
+.contact .happy_hour {
+  display: inline-block;
+  width: 350px;
+  height: 218px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d27244;
+  padding-top: 30px;
+  padding-left: 45px;
+  margin-right: 100px;
+  float: left;
+}
+.contact .happy_hour .happy_hour_title {
+  display: inline-block;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: bold;
+  color: #d27244;
+  border-bottom: 1px solid #d27244;
+  padding-bottom: 18px;
+}
+.contact .happy_hour .happy_hour_desc {
+  font-family: OpenSans;
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 24px;
+}
+.contact .contact_tel {
+  display: inline-block;
+  width: 330px;
+  height: 218px;
+  background-image: url("image/tel.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-right: 40px;
+  padding-top: 81px;
+  padding-left: 13px;
+}
+.contact .contact_tel p {
+  font-family: festus;
+  font-size: 48px;
+}
+.contact .contact_singup {
+  display: inline-block;
+  width: 410px;
+  height: 218px;
+  float: right;
+  padding-top: 30px;
+  padding-left: 60px;
+  /*Форма email*/
+  /*Кнопка*/
+}
+.contact .contact_singup .contact_singup_title {
+  font-family: OpenSans;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact .contact_singup p:nth-child(2) {
+  font-family: festus;
+  font-size: 18px;
+  color: #999999;
+  margin-bottom: 43px;
+}
+.contact .contact_singup input.sing_email {
+  height: 47px;
+  padding-left: 10px;
+}
+.contact .contact_singup input.sing_email:focus {
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+.contact .contact_singup input.btn_sing {
+  background-image: none;
+  background-color: #d27244;
+  color: white;
+  font-family: OpenSans;
+  font-size: 14px;
+  margin-left: 18px;
+  height: 47px;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d27244;
+}
+.contact .contact_singup input.btn_sing:focus {
+  background-image: none;
+  background-color: #d27244;
+  color: white;
+  border-color: white;
+  text-shadow: none;
+  outline: none;
+}
+.contact .contact_singup input.btn_sing:hover {
+  background-image: none;
+  background-color: black;
+  color: white;
+  border-color: white;
+  text-shadow: none;
+  outline: none;
+}
+.contact .contact_singup #sing_result {
+  margin-top: 20px;
+  font-family: OpenSans;
+  font-size: 14px;
+}
+/*Стили для LOCATION SECTION */
+.location_section {
+  height: 700px;
+  margin-left: -176.5px;
+  margin-right: -176.5px;
+  background-image: url("image/map.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 70px;
+  /*Заголовок*/
+  /*Контактная форма*/
+  /*Правый блок с информацией*/
+}
+.location_section .location_title {
+  margin-bottom: 112px;
+  text-align: center;
+}
+.location_section .location_title p.title {
+  display: inline-block;
+  margin-left: 23px;
+  margin-right: 23px;
+  font-family: 'Old Standard TT';
+  font-size: 60px;
+  color: white;
+}
+.location_section .location_title img {
+  vertical-align: text-top;
+}
+.location_section .location_title p:nth-child(4) {
+  font-family: festus;
+  font-size: 24px;
+  color: white;
+}
+.location_section .location_form {
+  float: left;
+  width: 630px;
+  padding-left: 21px;
+}
+.location_section .location_form p {
+  color: white;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+.location_section .location_form .form_left,
+.location_section .location_form .form_right {
+  float: left;
+}
+.location_section .location_form .info_text {
+  height: 47px;
+  padding-left: 10px;
+  margin-bottom: 11px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d27244;
+  margin-right: 20px;
+}
+.location_section .location_form textarea {
+  width: 307px;
+  height: 163px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d27244;
+  margin-bottom: 18px;
+}
+.location_section .location_form .info_text:focus,
+.location_section .location_form textarea:focus {
+  outline: none;
+  border-color: black;
+}
+.location_section .location_form .form_submit {
+  float: right;
+  background-image: none;
+  background-color: transparent;
+  color: white;
+  font-family: OpenSans;
+  font-size: 14px;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  font-weight: bold;
+}
+.location_section .location_form .form_right input.form_submit:focus {
+  background-image: none;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  text-shadow: none;
+  outline: none;
+}
+.location_section .location_form .form_right input.form_submit:hover {
+  background-image: none;
+  background-color: transparent;
+  border-color: black;
+  color: black;
+  text-shadow: none;
+}
+.location_section .location_form #location_result {
+  float: right;
+  color: white;
+  margin-top: 20px;
+  margin-right: 100px;
+  font-family: OpenSans;
+  font-size: 14px;
+}
+.location_section .location_info_wrap {
+  float: right;
+  width: 549px;
+  text-align: left;
+  /*Блок с адресом*/
+}
+.location_section .location_info_wrap .location_info {
+  width: 473px;
+  color: white;
+  font-family: OpenSans;
+  font-size: 14px;
+  margin-bottom: 50px;
+  line-height: 24px;
+}
+.location_section .location_info_wrap .location_info .location_info_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.location_section .location_info_wrap .glyphicon {
+  padding-right: 10px;
+}
+.location_section .location_info_wrap .location_adress {
+  width: 473px;
+  color: white;
+  font-family: OpenSans;
+  font-size: 14px;
+}
+.location_section .location_info_wrap .location_adress .location_adress_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.location_section .location_info_wrap .location_adress a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  background-image: url("image/location.png");
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  float: right;
+  color: white;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 75px;
+  padding-left: 15px;
+  position: relative;
+  top: -100px;
+}
+.location_section .location_info_wrap .location_adress a:focus {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+.location_section .location_info_wrap .location_adress a:hover {
+  text-decoration: none;
+  color: black;
+  border-color: black;
+  background-image: url("image/location-black.png");
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+}
+/*Стили для FOOTER */
+footer {
+  text-align: center;
+  padding-top: 63px;
+}
+footer nav li {
+  display: inline-block;
+}
+footer nav li a {
+  display: inline-block;
+  margin-right: 35px;
+  color: black;
+  font-family: MyriadPro;
+  font-size: 14px;
+}
+footer nav li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+footer nav li a:hover {
+  outline: none;
+  text-decoration: none;
+  color: #D3784C;
+}
+footer nav {
+  margin-bottom: 25px;
+}
+footer p {
+  font-family: OpenSans;
+  font-size: 10px;
+  color: #444444;
+  margin-top: 15px;
+}
